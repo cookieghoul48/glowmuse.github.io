@@ -1,0 +1,373 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body { 
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+    background-color: #faf3f5;
+    color: #2b2b2b;
+    line-height: 1.6;
+}
+.logo {
+    height: 200px; 
+    width: auto;
+    border-radius: 50%;
+}
+
+.top-bar {
+    background-color: #4a0e17;
+    color: #f7d6e0;
+    text-align: center;
+    padding: 8px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    border-bottom: 2px solid #f2d6e1;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.brand-text {
+    font-size: 22px;
+    font-weight: 800;
+    color: #4a0e17;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: #4a0e17;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    margin-left: 15px;
+    padding: 8px 14px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover { 
+    background-color: #fce8f0;
+    color: #801326;
+}
+
+/* MAIN CONTAINER */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(74, 14, 23, 0.05);
+    border: 1px solid #f5e1e9;
+}
+
+.hero-banner {
+    background: linear-gradient(135deg, #fce8f0 0%, #f7d6e0 100%);
+    text-align: center;
+    padding: 60px 20px;
+    border: none;
+}
+
+.badge-trend {
+    background-color: #4a0e17;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 11px;
+    border-radius: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero-banner h1 {
+    font-size: 36px;
+    color: #4a0e17;
+    margin: 15px 0;
+    font-weight: 800;
+}
+
+.btn-main {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #801326;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn-main:hover {
+    background-color: #4a0e17;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    color: #4a0e17;
+    margin-bottom: 5px;
+}
+
+.section-desc {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #f0d5e1;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(128, 19, 38, 0.15);
+}
+
+.tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: #d81b60;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 12px;
+    z-index: 10;
+}
+
+.tag-new {
+    background-color: #4a0e17;
+}
+
+.img-container img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.category {
+    font-size: 11px;
+    color: #888;
+    letter-spacing: 1px;
+}
+
+.product-info h3 {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #2b2b2b;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #801326;
+    margin-bottom: 15px;
+}
+
+.btn-cart {
+    width: 100%;
+    background-color: #4a0e17;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-cart:hover {
+    background-color: #801326;
+}
+
+.mision-vision-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.info-box {
+    flex: 1;
+    background-color: #fdf5f8;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 4px solid #801326;
+}
+
+.info-box h3 {
+    color: #4a0e17;
+    margin-bottom: 10px;
+}
+
+.survey-banner {
+    background-color: #801326;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.survey-banner h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.btn-survey {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #ffffff;
+    color: #801326;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 800;
+    transition: 0.3s ease;
+}
+
+.btn-survey:hover {
+    background-color: #fce8f0;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fcf4f7;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #270000;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #e2c2d4;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.contact-form button {
+    width: 100%;
+    background-color: #260000;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #000000;
+}
+
+.back-to-top {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.back-to-top a {
+    color: #801326;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.back-to-top a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #2b060b;
+    color: #f2c0d0;
+    padding: 30px 5% 15px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #4a0e17;
+    padding-top: 15px;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .mision-vision-container {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
